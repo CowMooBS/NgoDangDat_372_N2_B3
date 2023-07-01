@@ -1,0 +1,298 @@
+* { 
+    margin: 0   ;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+/*begin common  */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mgb {
+    margin-bottom: 10px;
+}
+
+.clear {
+    clear :both;
+}
+/* end common */
+
+
+#main {
+
+}
+#header {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    height: 78px;
+    background-color: #fff;  
+    z-index: 1;
+}
+#header .img-header {
+    height: 50px;
+    vertical-align: middle
+}
+#nav {
+    display: inline-block;
+}
+
+
+#nav li {   
+    position: relative;
+
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+ #nav > li > a {
+    color:red;
+    text-transform: uppercase;
+ } 
+
+
+#nav li a {    
+    text-decoration: none;
+    line-height: 80px;
+    padding: 0 24px;
+    display: block;
+}
+#nav li:hover .subnav {
+    display: block ;
+    background-color: #fff;
+    
+}
+
+#nav > li:hover > a {
+    color:#fff;
+    background-color: blue;
+    
+}
+ #nav .nav-down { 
+    font-size: 12px;
+
+} 
+#nav .nav-home {
+    font-size: 20px;
+}
+#nav .subnav {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 256px;
+   
+}
+v .subnav a {
+    color: red;
+}
+
+
+#nav .subnav li:hover a {
+    color: #fff;
+    background-color: blue;
+
+
+}
+
+#header .nav-search{
+    float:right;
+    padding: 0 32px;
+
+}
+#header .nav-search:hover {
+    color:#fff;
+    background-color: blue;
+    cursor: pointer;
+}
+#header .button-search {
+    color: #000;
+    font-size: 20px;
+    line-height: 80px;
+  
+
+}
+
+
+.nav-search .from {
+    display: none;
+}
+#slider {
+    position: relative;
+    /* margin-top: 46px;  */
+    /* padding-top: 50%;   */       
+    background:  top center / cover no-repeat;     
+    width: 100%;
+    height: auto;
+   
+}
+
+
+
+#content {
+
+}
+
+
+#content .content-section {
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  
+}
+#content .section-heading {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: red;
+}
+#content .content-heading {
+    margin-bottom: 10px;
+}
+.content-section .news-item,
+.content-section .tb-item
+ {
+    float: left;
+    width: 33.333333%;
+    padding: 0 8px;
+
+}
+
+
+.content-section .news-img,
+.content-section .tb-img
+
+ {
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
+#footer {
+    width: 100%;
+    height: auto;
+    background-color:#2a75f3;
+    margin-top: 30px;
+    
+
+}
+h3{
+    color: black;
+}
+h4{
+    color: black;
+}
+.footer-section {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.footer-text {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.js-dang-nhap {
+    border: 1px #fff;
+    background: #fff;
+    color: red;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px
+}
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background: #fff;
+    width: 900px;   
+    min-height: 200px;
+    position: relative;
+}
+.modal-header {
+    height: 300px;    
+    text-align: center;
+}
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px;
+    cursor: pointer;
+    background: red;
+}
+.modal-close :hover {
+    color: #fff;
+}
+.modal-body
+{
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.modal-input {
+    border: 1px solid #ccc;
+    font-size: 15px;
+    width: 100%;   
+    padding: 10px;
+    margin-bottom: 24px;
+}
+#dn {
+    background: blue;
+    color: #fff;
+    width: 100%;
+    padding: 16px;    
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+#dn:hover{
+    color: #000;
+    opacity: 0.9;
+}
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+
+
+
+
+
+
+
